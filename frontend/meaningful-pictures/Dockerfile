@@ -1,5 +1,5 @@
 # Step 1 - define app env
-FROM node:15-alpine
+FROM node:17-alpine
 
 # Step 2 - create directory in the container
 WORKDIR /app
@@ -21,4 +21,4 @@ ENV PORT=4002
 EXPOSE 4002
 
 # Step 8 - run app
-CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "start" ]

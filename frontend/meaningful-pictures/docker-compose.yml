@@ -1,0 +1,7 @@
+version: '3'
+services:
+  meaningful_pictures_spa:
+    container_name: meaningful_pictures_spa
+    build: .
+    ports:
+      - 3000:4002
