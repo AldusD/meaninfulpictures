@@ -4,8 +4,9 @@ FROM node:15-alpine
 # Step 2 - create directory in the container
 WORKDIR /app
 
-# Step 3 - copy package to container
+# Step 3 - copy package & tsconfig to container
 COPY package*.json ./
+COPY tsconfig*.json ./
 
 # Step 4 - install dependencies
 RUN npm install
