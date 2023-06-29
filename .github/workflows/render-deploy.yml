@@ -1,0 +1,17 @@
+name: Deploy on Render
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  RenderDeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+      - uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.SERVICE_ID }} 
+          api-key: ${{ secrets.RENDER_API_KEY }}
+          branch: "main"
