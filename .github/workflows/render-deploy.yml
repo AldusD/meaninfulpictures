@@ -9,7 +9,8 @@ jobs:
   RenderDeploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
+      - name: render deploy
+        uses: actions/checkout@v3
       - uses: johnbeynon/render-deploy-action@v0.0.8
         with:
           service-id: ${{ secrets.SERVICE_ID }} 
