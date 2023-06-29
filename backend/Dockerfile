@@ -10,7 +10,6 @@ COPY package*.json ./
 # Step 4 - install dependencies
 RUN npm install
 
-
 # Step 5 - copy all files
 COPY . ./app
 
@@ -20,5 +19,5 @@ ENV PORT=4002
 # Step 7 - expose app port
 EXPOSE 4002
 
-# Step 8 - run app
-CMD [ "npm", "run", "dev" ]
+# Step 8 - run app (npm start for production)
+CMD ["npm", "run", "dev" ] 
