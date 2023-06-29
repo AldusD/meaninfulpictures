@@ -20,4 +20,4 @@ ENV PORT=4002
 EXPOSE 4002
 
 # Step 8 - run app (npm start for production)
-CMD ["npm", "run", "dev" ] 
+CMD ["npm", "run", "start" ]
